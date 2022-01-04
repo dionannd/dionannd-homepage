@@ -1,8 +1,8 @@
 import { Badge, Container, List, ListItem, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from 'components/works'
+import { Paragraph } from 'components/paragraph'
 import { Layout } from 'components/layout/article'
-import P from 'components/paragraph'
 
 const Work = () => (
   <Layout title="Fixcreative">
@@ -10,12 +10,15 @@ const Work = () => (
       <Title>
         Fixcreative <Badge>2022</Badge>
       </Title>
-      <P>A Website Wedding and other Studio of Fixcreative</P>
+      <Paragraph>
+        Fixcreative is a studio website engaged in Photo & Video Documentation,
+        ranging from Event, Engagement, Pre-Wedding, Wedding and others
+      </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://www.fixcreative-studio.com/">
-            https://www.fixcreative-studio.com/ <ExternalLinkIcon mx={2} />
+            www.fixcreative-studio.com <ExternalLinkIcon mx={2} />
           </Link>
         </ListItem>
         <ListItem>

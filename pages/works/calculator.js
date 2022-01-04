@@ -5,18 +5,17 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Work = () => {
   return (
-    <Layout title="Fixcreative">
+    <Layout title="Calculator">
       <Container>
         <Title>
-          Fixcreative <Badge>2022</Badge>
+          Calculator <Badge>2021</Badge>
         </Title>
-        A Website Wedding and other Studio of Fixcreative
+        A project for making a calculator with a website shape to make it easier
+        to calculate calculations
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="#">
-              Nothing. <ExternalLinkIcon mx={2} />
-            </Link>
+            <Link href="#">Nothing.</Link>
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
@@ -24,13 +23,17 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>NextJS, Chakra-UI, React Libary</span>
+            <span>Javascript, HTML, CSS</span>
+          </ListItem>
+          <ListItem>
+            <Meta>Source</Meta>
+            <Link href="https://github.com/dionannd/javascript-calculator">
+              github.com/dionannd/javascript-calculator{' '}
+              <ExternalLinkIcon mx={2} />
+            </Link>
           </ListItem>
         </List>
-        <WorkImage
-          src="/images/works/website_fixcreative-studio.png"
-          alt="Fixcreative"
-        />
+        <WorkImage src="/images/works/apps_calculator.png" alt="Calculator" />
       </Container>
     </Layout>
   )

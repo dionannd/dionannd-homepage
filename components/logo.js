@@ -19,13 +19,13 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/vercel.png`
+  const vercelPrintImg = `/images/vercel.png`
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={25} height={25} alt="logo" />
+          <Image src={vercelPrintImg} width={25} height={25} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"

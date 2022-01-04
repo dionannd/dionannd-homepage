@@ -29,14 +29,14 @@ const Home = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a Web developer based in Indonesian!
+          Hello, I&apos;m a Web developer based in Indonesia!
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Dian Ananda
             </Heading>
-            <p>A Human as ( Developer / Designer )</p>
+            <p>A People as ( Developer / Designer )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -88,7 +88,7 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>2000</BioYear>
-            Born in Bekasi, Indonesian.
+            Born in Bekasi, Indonesia.
           </BioSection>
           <BioSection>
             <BioYear>2017</BioYear>

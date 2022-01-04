@@ -1,22 +1,19 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Box, Heading, Link, Image, Badge } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { Box, Heading, Link, Image, Badge } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
   <Box>
     <NextLink href="/works">
       <Link>Works</Link>
     </NextLink>
-    <Box>
-      <span>
-        &nbsp;
-        <ChevronRightIcon />
-        &nbsp;
-      </span>
-      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
-        {children}
-      </Heading>
-    </Box>
+    <span>
+      {' '}
+      <ChevronRightIcon />
+    </span>
+    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+      {children}
+    </Heading>
   </Box>
 )
 

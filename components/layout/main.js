@@ -3,6 +3,7 @@ import { Box, Container } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import { Navbar } from 'components/navbar'
 import VoxelDogLoader from '../voxel-dog-loader'
+import { Footer } from 'components/footer'
 
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   ssr: false,
@@ -25,6 +26,8 @@ const Main = ({ children, router }) => {
         <LazyVoxelDog />
 
         {children}
+
+        <Footer />
       </Container>
     </Box>
   )

@@ -59,7 +59,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Profile
+            About
           </Heading>
           <Paragraph>
             Call me Dion, i like everything about Design, Computer & Network,

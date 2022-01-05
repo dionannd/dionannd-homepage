@@ -30,10 +30,10 @@ const Work = () => (
           <span>NextJS, Chakra-UI, React Libary</span>
         </ListItem>
       </List>
-      <WorkImage
-        src="/images/works/website_fixcreative-studio.png"
-        alt="Fixcreative"
-      />
+      <WorkImage src="/images/works/fixcreative-01.png" alt="Fixcreative" />
+      <WorkImage src="/images/works/fixcreative-02.png" alt="Fixcreative" />
+      <WorkImage src="/images/works/fixcreative-03.png" alt="Fixcreative" />
+      <WorkImage src="/images/works/fixcreative-04.png" alt="Fixcreative" />
     </Container>
   </Layout>
 )

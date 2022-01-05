@@ -3,10 +3,10 @@ import { Section } from 'components/section'
 import { WorkGridItem } from 'components/grid-item'
 import { Layout } from 'components/layout/article'
 
-import thumbFixcreative from '../public/images/works/website_fixcreative-studio.png'
-import thumbSisos from '../public/images/works/apps_sosmed.png'
-import thumbJournal from '../public/images/works/apps_journal.png'
-import thumbCalculator from '../public/images/works/apps_calculator.png'
+import thumbFixcreative from '../public/images/works/fixcreative-01.png'
+import thumbSisos from '../public/images/works/sisos-01.png'
+import thumbJournal from '../public/images/works/sijour-01.png'
+import thumbCalculator from '../public/images/works/calculator-01.png'
 
 const Works = () => {
   return (

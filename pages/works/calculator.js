@@ -2,6 +2,7 @@ import { Title, WorkImage, Meta } from 'components/works'
 import { Layout } from 'components/layout/article'
 import { Badge, Container, List, ListItem, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Paragraph } from 'components/paragraph'
 
 const Work = () => {
   return (
@@ -10,13 +11,11 @@ const Work = () => {
         <Title>
           Calculator <Badge>2021</Badge>
         </Title>
-        A project for making a calculator with a website shape to make it easier
-        to calculate calculations
+        <Paragraph>
+          A project for making a calculator with a website shape to make it
+          easier to calculate calculations
+        </Paragraph>
         <List ml={4} my={4}>
-          <ListItem>
-            <Meta>Website</Meta>
-            <Link href="#">Nothing.</Link>
-          </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
             <span>Windows/MacOS/Linux/iOS/Android</span>
@@ -33,7 +32,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/apps_calculator.png" alt="Calculator" />
+        <WorkImage src="/images/works/calculator-01.png" alt="Calculator" />
       </Container>
     </Layout>
   )

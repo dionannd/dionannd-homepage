@@ -3,7 +3,7 @@ import { Section } from 'components/section'
 import { GridItem } from 'components/grid-item'
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 
-import thumbTest from '../public/images/works/website_fixcreative-studio.png'
+import thumbLaravel from '../public/images/posts/laravel.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -13,7 +13,16 @@ const Posts = () => (
       </Heading>
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem title="Test post" thumbnail={thumbTest}></GridItem>
+          <GridItem
+            title="Cara Install Laravel 7 dengan Composer"
+            thumbnail={thumbLaravel}
+            href="https://jejakkoding.blogspot.com/2020/08/cara-install-laravel-7-dengan-composer.html"
+          />
+          <GridItem
+            title="Laravel - Pengertian, Kelebihan, dan Kekurangan"
+            thumbnail={thumbLaravel}
+            href="https://jejakkoding.blogspot.com/2020/08/laravel-pengertian-kelebihan-dan.html"
+          />
         </SimpleGrid>
       </Section>
     </Container>

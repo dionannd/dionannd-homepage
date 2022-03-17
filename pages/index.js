@@ -27,6 +27,7 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
           mb={6}
+          mt={6}
           align="center"
         >
           Hello, I&apos;m a Web developer based in Indonesia!
@@ -122,7 +123,7 @@ const Home = () => {
           </Heading>
           <Paragraph>
             Art, Music, Playing Musical Instrument, Gaming, Playing Badminton,
-            Read Comic, Stream Film, Machine Learning
+            Read Comic, Stream Film.
           </Paragraph>
         </Section>
 

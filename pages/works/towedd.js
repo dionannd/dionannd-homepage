@@ -5,20 +5,20 @@ import { Paragraph } from 'components/paragraph'
 import { Layout } from 'components/layout/article'
 
 const Work = () => (
-  <Layout title="Fixcreative">
+  <Layout title="Towedd">
     <Container mt={6}>
       <Title>
-        Fixcreative <Badge>2022</Badge>
+        Towedd <Badge>2021</Badge>
       </Title>
       <Paragraph>
-        Fixcreative is a studio website engaged in Photo & Video Documentation,
-        ranging from Event, Engagement, Pre-Wedding, Wedding and others
+        Towedd is a platform used to create website-based wedding online
+        invitations.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.fixcreative-studio.com/">
-            www.fixcreative-studio.com <ExternalLinkIcon mx={2} />
+          <Link href="https://www.towedd.com/">
+            www.towedd.com <ExternalLinkIcon mx={2} />
           </Link>
         </ListItem>
         <ListItem>
@@ -30,10 +30,11 @@ const Work = () => (
           <span>NextJS, Typescript, Chakra-UI, React Libary</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/fixcreative-01.png" alt="Fixcreative" />
-      <WorkImage src="/images/works/fixcreative-02.png" alt="Fixcreative" />
-      <WorkImage src="/images/works/fixcreative-03.png" alt="Fixcreative" />
-      <WorkImage src="/images/works/fixcreative-04.png" alt="Fixcreative" />
+      <WorkImage src="/images/works/towedd-01.png" alt="Towedd" />
+      <WorkImage src="/images/works/towedd-02.png" alt="Towedd" />
+      <WorkImage src="/images/works/towedd-03.png" alt="Towedd" />
+      <WorkImage src="/images/works/towedd-04.png" alt="Towedd" />
+      <WorkImage src="/images/works/towedd-05.png" alt="Towedd" />
     </Container>
   </Layout>
 )

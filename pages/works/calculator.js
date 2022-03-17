@@ -7,7 +7,7 @@ import { Paragraph } from 'components/paragraph'
 const Work = () => {
   return (
     <Layout title="Calculator">
-      <Container>
+      <Container mt={6}>
         <Title>
           Calculator <Badge>2021</Badge>
         </Title>

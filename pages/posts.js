@@ -8,8 +8,8 @@ import thumbLaravel from '../public/images/posts/laravel.png'
 const Posts = () => (
   <Layout title="Posts">
     <Container>
-      <Heading as="h4" fontSize={20} mb={4}>
-        Populer Posts
+      <Heading as="h4" fontSize={20} my={6}>
+        Posts
       </Heading>
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>

@@ -5,7 +5,7 @@ import { Layout } from 'components/layout/article'
 
 const Work = () => (
   <Layout title="Sijour">
-    <Container>
+    <Container mt={6}>
       <Title>
         Sijour <Badge>2021</Badge>
       </Title>

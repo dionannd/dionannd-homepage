@@ -52,7 +52,7 @@ const Home = () => {
               maxW="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/dion.jpg"
+              src="/images/Dion.jpg"
               alt="Profile"
             />
           </Box>
@@ -60,12 +60,13 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            About
+            Bio
           </Heading>
           <Paragraph>
-            Call me Dion, i like everything about Design, Computer & Network,
-            always learning to be a Full Stack Developer, like the new
-            knowledge. Record traces by writing in{' '}
+            I am a front-end developer who mastered ReactJS, NextJS and JavaScript 
+            as a back-end and am learning to be a fullstack developer, experienced 
+            in using Laravel and CodeIgniter frameworks, and currently learning Typescript, 
+            Flutter and Golang. Record traces by writing in{' '}
             <a
               href="https://jejakkoding.blogspot.com"
               target="_blank"
@@ -74,18 +75,25 @@ const Home = () => {
               <Link>Jejak Koding</Link>
             </a>
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box align="center" mt={4} mb={2} flexDir="row">
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Portfolio
               </Button>
             </NextLink>
           </Box>
+          {/* <Box align="center" mb={4} flexDir="row"> */}
+          {/*   <NextLink href="/works"> */}
+          {/*     <Button rightIcon={<ChevronRightIcon />} colorScheme="teal"> */}
+          {/*       My Curriculum Vitae */}
+          {/*     </Button> */}
+          {/*   </NextLink> */}
+          {/* </Box> */}
         </Section>
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            Profile
           </Heading>
           <BioSection>
             <BioYear>2000</BioYear>

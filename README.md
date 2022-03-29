@@ -17,7 +17,7 @@ $PROJECT_ROOT
 ├── components
 │   # Non-react modules
 ├── lib
-│   # Static files for images and 3d model file
+│   # Static files for images
 └── public
 ```
 

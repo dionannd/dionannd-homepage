@@ -63,10 +63,11 @@ const Home = () => {
             Bio
           </Heading>
           <Paragraph>
-            I am a front-end developer who mastered ReactJS, NextJS and JavaScript 
-            as a back-end and am learning to be a fullstack developer, experienced 
-            in using Laravel and CodeIgniter frameworks, and currently learning Typescript, 
-            Flutter and Golang. Record traces by writing in{' '}
+            I am a front-end developer who mastered ReactJS, NextJS and
+            JavaScript as a back-end and am learning to be a fullstack
+            developer, experienced in using Laravel and CodeIgniter frameworks,
+            and currently learning Typescript, Flutter and Golang. Record traces
+            by writing in{' '}
             <a
               href="https://jejakkoding.blogspot.com"
               target="_blank"
@@ -82,13 +83,18 @@ const Home = () => {
               </Button>
             </NextLink>
           </Box>
-          {/* <Box align="center" mb={4} flexDir="row"> */}
-          {/*   <NextLink href="/works"> */}
-          {/*     <Button rightIcon={<ChevronRightIcon />} colorScheme="teal"> */}
-          {/*       My Curriculum Vitae */}
-          {/*     </Button> */}
-          {/*   </NextLink> */}
-          {/* </Box> */}
+
+          <Box align="center" mb={4} flexDir="row">
+            <a
+              href="https://dionannd.github.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                My Resume
+              </Button>
+            </a>
+          </Box>
         </Section>
 
         <Section delay={0.2}>
@@ -121,7 +127,11 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020 to present</BioYear>
-            Works as Technical Smartphone and freelancer Web Developer.
+            Works as Technical Smartphone and freelancer Web Developer in
+            <a href="https://towedd.com" target="_blank" rel="noreferrer">
+              <Link ml={1}>Towedd.com</Link>
+            </a>
+            .
           </BioSection>
         </Section>
 

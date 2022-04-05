@@ -52,7 +52,7 @@ const Home = () => {
               maxW="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/Dion.jpg"
+              src="/images/dion.jpg"
               alt="Profile"
             />
           </Box>

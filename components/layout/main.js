@@ -1,29 +1,31 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-// import dynamic from 'next/dynamic'
 import { Navbar } from 'components/navbar'
-// import VoxelDogLoader from '../voxel-dog-loader'
 import { Footer } from 'components/footer'
-
-// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-//   ssr: false,
-//   loading: () => <VoxelDogLoader />
-// })
 
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
-        <title>Dian Ananda</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1 " />
+        <meta name="author" content="dionannd" />
         <meta name="description" content="Dian Ananda Portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:title" content="Dian Ananda" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@dionannd" />
+        <meta name="twitter:creator" content="@dionannd" />
+
+        <meta property="og:site_name" content="Dian Ananda" />
+
+        <meta name="og:title" content="Dian Ananda" />
+        <meta property="og:type" content="website" />
+
+        <title>Dian Ananda - Homepage</title>
       </Head>
 
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        {/* <LazyVoxelDog /> */}
 
         {children}
 

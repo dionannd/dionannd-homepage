@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-export const Layout = ({ children, title }) => {
+const Layout = ({ children, title }) => {
   const t = `${title} - Dian Ananda`
   return (
     <motion.article
@@ -28,8 +28,11 @@ export const Layout = ({ children, title }) => {
           </Head>
         )}
         {children}
+
         <GridItemStyle />
       </>
     </motion.article>
   )  
 }
+
+export default Layout

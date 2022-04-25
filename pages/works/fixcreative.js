@@ -1,8 +1,8 @@
 import { Badge, Container, List, ListItem, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from 'components/works'
-import { Paragraph } from 'components/paragraph'
-import { Layout } from 'components/layout/article'
+import Paragraph from 'components/paragraph'
+import Layout from 'components/layouts/article'
 
 const Work = () => (
   <Layout title="Fixcreative">

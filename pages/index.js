@@ -8,15 +8,19 @@ import {
   Button,
   List,
   ListItem,
-  Icon
+  chakra
 } from '@chakra-ui/react'
-import { Section } from 'components/section'
-import { Paragraph } from 'components/paragraph'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
-import { Layout } from 'components/layout/article'
+import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from 'components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io'
+import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 const Home = () => {
   return (
@@ -29,9 +33,11 @@ const Home = () => {
           mb={6}
           mt={6}
           align="center"
+          css={{ backdropFilter: 'blur(10px)' }}
         >
           Hello, I&apos;m a Web developer based in Indonesia!
         </Box>
+
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -43,18 +49,26 @@ const Home = () => {
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
-            align="center"
+            textAlign="center"
           >
-            <Image
+            <Box
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxW="100px"
+              w="100px"
+              h="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/dion.jpg"
-              alt="Profile"
-            />
+              overflow="hidden"
+            >
+              <ProfileImage
+                src="/images/dion.jpg"
+                alt="Profile image"
+                borderRadius="full"
+                width="100%"
+                height="100%"
+              />
+            </Box>
           </Box>
         </Box>
 
@@ -77,7 +91,7 @@ const Home = () => {
             </a>
           </Paragraph>
           <Box align="center" mt={4} mb={2} flexDir="row">
-            <NextLink href="/works">
+            <NextLink href="/works" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Portfolio
               </Button>
@@ -155,20 +169,20 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoGithub} />}
+                  leftIcon={<IoLogoGithub />}
                 >
                   @dionannd
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/dionannd" target="_blank">
+              <Link href="https://www.linkedin.com/in/dian-ananda-552a79152/" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  leftIcon={<IoLogoLinkedin />}
                 >
-                  @dionannd
+                  @dian-ananda
                 </Button>
               </Link>
             </ListItem>
@@ -177,7 +191,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoInstagram} />}
+                  leftIcon={<IoLogoInstagram />}
                 >
                   @dionannd_
                 </Button>
@@ -191,3 +205,4 @@ const Home = () => {
 }
 
 export default Home
+export { getServerSideProps } from '../components/chakra'

@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import { Section } from 'components/section'
+import Section from 'components/section'
 import { WorkGridItem } from 'components/grid-item'
-import { Layout } from 'components/layout/article'
+import Layout from 'components/layouts/article'
 
 import thumbTowedd from '../public/images/works/towedd-01.png'
 import thumbFixcreative from '../public/images/works/fixcreative-01.png'
@@ -62,3 +62,4 @@ const Works = () => {
 }
 
 export default Works
+export { getServerSideProps } from '../components/chakra'

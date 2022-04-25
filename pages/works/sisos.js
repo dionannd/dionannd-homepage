@@ -1,7 +1,7 @@
 import { Badge, Container, List, ListItem } from '@chakra-ui/react'
 import { Title, WorkImage, Meta } from 'components/works'
-import { Paragraph } from 'components/paragraph'
-import { Layout } from 'components/layout/article'
+import Paragraph from 'components/paragraph'
+import Layout from 'components/layouts/article'
 
 const Work = () => (
   <Layout title="Sisos">

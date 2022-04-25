@@ -7,7 +7,7 @@ const StyleDiv = chakra(motion.div, {
   }
 })
 
-export const Section = ({ children, delay = 0 }) => (
+const Section = ({ children, delay = 0 }) => (
   <StyleDiv
     initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
@@ -17,3 +17,5 @@ export const Section = ({ children, delay = 0 }) => (
     {children}
   </StyleDiv>
 )
+
+export default Section

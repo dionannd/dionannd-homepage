@@ -15,19 +15,19 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Logo from 'components/logo'
-import { ThemeToggleButton } from './theme-toggle-button'
+import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        _target={_target}
+        target={target}
         {...props}
       >
         {children}
@@ -36,7 +36,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   )
 }
 
-export const Navbar = props => {
+const Navbar = props => {
   const { path } = props
 
   return (
@@ -66,7 +66,7 @@ export const Navbar = props => {
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
-          w={{ base: 'full', md: 'auto' }}
+          width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
@@ -106,4 +106,6 @@ export const Navbar = props => {
       </Container>
     </Box>
   )
-}
+} 
+
+export default Navbar

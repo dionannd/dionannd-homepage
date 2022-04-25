@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-import { Navbar } from 'components/navbar'
-import { Footer } from 'components/footer'
+import Navbar from '../navbar'
+import Footer from '../footer'
 
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
         <meta name="author" content="dionannd" />
-        <meta name="description" content="Dian Ananda Portfolio" />
+        <meta name="description" content="Dian Ananda homepage" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="twitter:title" content="Dian Ananda" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -26,7 +26,6 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-
         {children}
 
         <Footer />

@@ -7,7 +7,6 @@ import thumbTowedd from '../public/images/works/towedd-01.png'
 import thumbFixcreative from '../public/images/works/fixcreative-01.png'
 import thumbSisos from '../public/images/works/sisos-01.png'
 import thumbJournal from '../public/images/works/sijour-01.png'
-import thumbCalculator from '../public/images/works/calculator-01.png'
 
 const Works = () => {
   return (
@@ -43,16 +42,6 @@ const Works = () => {
           <Section>
             <WorkGridItem id="sijour" title="SiJour" thumbnail={thumbJournal}>
               A Website for keep records of daily expenses with encrypted data
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="calculator"
-              title="Calculator"
-              thumbnail={thumbCalculator}
-            >
-              A Website to counting numbers
             </WorkGridItem>
           </Section>
         </SimpleGrid>

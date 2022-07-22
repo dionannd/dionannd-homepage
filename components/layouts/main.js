@@ -7,7 +7,9 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="dionannd" />
+        <meta name="author" content="Dian Ananda" />
         <meta name="description" content="Dian Ananda homepage" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="twitter:title" content="Dian Ananda" />

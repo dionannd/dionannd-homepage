@@ -1,10 +1,10 @@
-import { Badge, Container, List, ListItem } from '@chakra-ui/react'
-import { Title, WorkImage, Meta } from 'components/works'
-import Paragraph from 'components/paragraph'
-import Layout from 'components/layouts/article'
+import { Badge, Container, List, ListItem } from '@chakra-ui/react';
+import { Title, WorkImage, Meta } from '@/components/works';
+import Paragraph from '@/components/paragraph';
+import Layout from '@/components/layouts/article';
 
 const Work = () => (
-  <Layout title="Sijour">
+  <Layout title='Sijour'>
     <Container mt={6}>
       <Title>
         Sijour <Badge>2021</Badge>
@@ -23,9 +23,9 @@ const Work = () => (
           <span>ExpressJS, ReactJS, NodeJS, Chakra-UI</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/sijour-01.png" alt="Sijour" />
+      <WorkImage src='/images/works/sijour-01.png' alt='Sijour' />
     </Container>
   </Layout>
-)
+);
 
-export default Work
+export default Work;

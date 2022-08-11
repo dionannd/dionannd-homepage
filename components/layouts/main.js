@@ -11,7 +11,6 @@ const Main = ({ children, router }) => {
         <meta name='description' content="Dion's homepage" />
         <meta name='author' content='dionannd' />
         <meta name='author' content='Dian Ananda' />
-        <link rel='icon' href='/favicon.ico' />
         <meta name='twitter:title' content='Dian Ananda' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@dionannd' />
@@ -26,7 +25,6 @@ const Main = ({ children, router }) => {
 
       <Container maxW='container.md' pt={14}>
         {children}
-
         <Footer />
       </Container>
     </Box>

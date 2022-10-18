@@ -3,7 +3,7 @@ import Section from '@/components/section';
 import { GridItem } from '@/components/grid-item';
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
-import thumbLaravel from '../public/images/posts/laravel.png';
+import thumbLaravel from '~/images/posts/laravel.png';
 
 const Posts = () => (
   <Layout title='Posts'>
@@ -30,4 +30,4 @@ const Posts = () => (
 );
 
 export default Posts;
-export { getServerSideProps } from '@/components/chakra';
+export { getServerSideProps } from 'src/components/chakra';

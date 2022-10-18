@@ -8,11 +8,11 @@ import {
   List,
   ListItem
 } from '@chakra-ui/react';
-import Section from '@/components/section';
-import Paragraph from '@/components/paragraph';
+import Section from 'src/components/section';
+import Paragraph from 'src/components/paragraph';
 import NextLink from 'next/link';
-import Layout from '@/components/layouts/article';
-import { BioSection, BioYear } from '@/components/bio';
+import Layout from 'src/components/layouts/article';
+import { BioSection, BioYear } from 'src/components/bio';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
 import Image from 'next/image';
@@ -86,13 +86,6 @@ const Home = () => {
                 My Portfolio
               </Button>
             </NextLink>
-          </Box>
-          <Box align='center' mb={4} flexDir='row'>
-            <Link href='https://dionannd.github.io' target='_blank'>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
-                My Resume
-              </Button>
-            </Link>
           </Box>
         </Section>
 
@@ -197,4 +190,4 @@ const Home = () => {
 };
 
 export default Home;
-export { getServerSideProps } from '@/components/chakra';
+export { getServerSideProps } from 'src/components/chakra';

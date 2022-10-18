@@ -1,7 +1,7 @@
-import Layout from '@/components/layouts/main';
-import Fonts from '@/components/fonts';
+import Layout from 'src/components/layouts/main';
+import Fonts from 'src/components/fonts';
 import { AnimatePresence } from 'framer-motion';
-import Chakra from '@/components/chakra';
+import Chakra from 'src/components/chakra';
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual';

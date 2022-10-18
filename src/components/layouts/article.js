@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-import { GridItemStyle } from 'src/components/grid-item';
+import { GridItemStyle } from '@/components/grid-item';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },

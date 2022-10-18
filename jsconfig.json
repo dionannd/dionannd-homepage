@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"]
     },
-    "target": "es5"
+    "target": "es5",
+    "incremental": true
   }
 }

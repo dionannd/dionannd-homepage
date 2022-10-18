@@ -77,7 +77,16 @@ const Navbar = props => {
           <LinkItem href='/posts' path={path}>
             Posts
           </LinkItem>
+          <LinkItem
+            target='_blank'
+            href='https://dionannd.github.io'
+            path={path}
+            display='inline-flex'
+          >
+            Resume
+          </LinkItem>
         </Stack>
+
         <Box flex={1} textAlign='right'>
           <ThemeToggleButton />
 
@@ -98,6 +107,9 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href='/posts' passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href='https://dionannd.github.io' passHref>
+                  <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

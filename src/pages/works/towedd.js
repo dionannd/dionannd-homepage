@@ -27,14 +27,15 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NextJS, Typescript, Chakra-UI, React Libary</span>
+          <span>
+            NextJS, Fastify, Typescript, Chakra-UI, React Libary, Postgresql
+          </span>
         </ListItem>
       </List>
-      <WorkImage src='/images/works/towedd-01.png' alt='Towedd' />
-      <WorkImage src='/images/works/towedd-02.png' alt='Towedd' />
-      <WorkImage src='/images/works/towedd-03.png' alt='Towedd' />
-      <WorkImage src='/images/works/towedd-04.png' alt='Towedd' />
-      <WorkImage src='/images/works/towedd-05.png' alt='Towedd' />
+      <WorkImage src='/images/works/towedd/towedd-01.webp' alt='Towedd' />
+      <WorkImage src='/images/works/towedd/towedd-02.webp' alt='Towedd' />
+      <WorkImage src='/images/works/towedd/towedd-03.webp' alt='Towedd' />
+      <WorkImage src='/images/works/towedd/towedd-04.webp' alt='Towedd' />
     </Container>
   </Layout>
 );

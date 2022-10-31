@@ -15,16 +15,18 @@ const LogoBox = styled.span`
 const Logo = () => {
   return (
     <Link href='/' scroll={false} passHref>
-      <LogoBox>
-        <Text
-          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily='"M PLUS Rounded 1c", sans-serif'
-          fontWeight='bold'
-          cursor='pointer'
-        >
-          Dian Ananda
-        </Text>
-      </LogoBox>
+      <a>
+        <LogoBox>
+          <Text
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily='"M PLUS Rounded 1c", sans-serif'
+            fontWeight='bold'
+            ml={3}
+          >
+            Dian Ananda
+          </Text>
+        </LogoBox>
+      </a>
     </Link>
   );
 };

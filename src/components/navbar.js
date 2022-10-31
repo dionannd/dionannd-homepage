@@ -13,7 +13,7 @@ import {
   Stack,
   useColorModeValue
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { DownloadIcon, HamburgerIcon } from '@chakra-ui/icons';
 import Logo from '@/components/logo';
 import ThemeToggleButton from './theme-toggle-button';
 
@@ -79,10 +79,16 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target='_blank'
-            href='https://dionannd.github.io'
+            href='/pdf/cv_dian_ananda.pdf'
+            alt='CV Dian Ananda'
             path={path}
+            rel='noopener noreferrer'
             display='inline-flex'
+            alignItems='center'
+            style={{ gap: 4 }}
+            pl={2}
           >
+            <DownloadIcon />
             Resume
           </LinkItem>
         </Stack>
@@ -108,7 +114,7 @@ const Navbar = props => {
                 <NextLink href='/posts' passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href='https://dionannd.github.io' passHref>
+                <NextLink href='/pdf/cv_dian_ananda.pdf' passHref>
                   <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
               </MenuList>

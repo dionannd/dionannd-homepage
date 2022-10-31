@@ -71,11 +71,11 @@ const Home = () => {
             Bio
           </Heading>
           <Paragraph>
-            I am a front-end developer who mastered ReactJS, NextJS and
-            JavaScript as a back-end and am learning to be a fullstack
-            developer, experienced in using Laravel and CodeIgniter frameworks,
-            and currently learning Typescript, Flutter and Golang. Record traces
-            by writing in{' '}
+            I&apos;m a front-end developer who knows ReactJS, NextJS, and
+            currently I&apos;m deepening ExpressJS, and NodeJS as a back-end to
+            become a fullstack developer, I Experienced in using Laravel and
+            CodeIgniter frameworks, and I&apos;m also learning other things like
+            Golang, Flutter. Record traces by writing in{' '}
             <Link href='https://jejakkoding.blogspot.com' target='_blank'>
               Jejak Koding
             </Link>

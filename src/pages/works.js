@@ -3,10 +3,10 @@ import Section from '@/components/section';
 import { WorkGridItem } from '@/components/grid-item';
 import Layout from '@/components/layouts/article';
 
-import thumbTowedd from '~/images/works/towedd-01.png';
-import thumbFixcreative from '~/images/works/fixcreative-01.png';
-import thumbSisos from '~/images/works/sisos-01.png';
-import thumbJournal from '~/images/works/sijour-01.png';
+import thumbTowedd from '~/images/works/towedd/towedd-01.webp';
+import thumbFixcreative from '~/images/works/fixcreative/fixcreative-01.webp';
+import thumbSisos from '~/images/works/sisos/sisos-01.webp';
+import thumbFurniture from '~/images/works/gijanjok/gijanjok-01.webp';
 
 const Works = () => {
   return (
@@ -40,8 +40,12 @@ const Works = () => {
           </Section>
 
           <Section>
-            <WorkGridItem id='sijour' title='SiJour' thumbnail={thumbJournal}>
-              A Website for keep records of daily expenses with encrypted data
+            <WorkGridItem
+              id='gijanjok'
+              title='Gijan Jok Furniture'
+              thumbnail={thumbFurniture}
+            >
+              A Website for shopping cool furniture with simple design
             </WorkGridItem>
           </Section>
         </SimpleGrid>

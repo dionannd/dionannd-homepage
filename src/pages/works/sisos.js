@@ -1,4 +1,5 @@
-import { Badge, Container, List, ListItem } from '@chakra-ui/react';
+import { Badge, Container, List, Link, ListItem } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '@/components/works';
 import Paragraph from '@/components/paragraph';
 import Layout from '@/components/layouts/article';
@@ -17,17 +18,23 @@ const Work = () => (
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
+          <Meta>Website</Meta>
+          <Link href='http://localhost:3000/'>
+            http://localhost:3000 <ExternalLinkIcon mx={2} />
+          </Link>
+        </ListItem>
+        <ListItem>
           <Meta>Platform</Meta>
           <span>Windows/MacOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>ExpressJS, React, NodeJS, Chakra-UI</span>
+          <span>ExpressJS, React, NodeJS, Chakra-UI, Postgresql</span>
         </ListItem>
       </List>
-      <WorkImage src='/images/works/sisos-01.png' alt='Sisos' />
-      <WorkImage src='/images/works/sisos-02.png' alt='Sisos' />
-      <WorkImage src='/images/works/sisos-03.png' alt='Sisos' />
+      <WorkImage src='/images/works/sisos/sisos-01.webp' alt='Sisos' />
+      <WorkImage src='/images/works/sisos/sisos-02.webp' alt='Sisos' />
+      <WorkImage src='/images/works/sisos/sisos-03.webp' alt='Sisos' />
     </Container>
   </Layout>
 );

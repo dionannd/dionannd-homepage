@@ -10,23 +10,28 @@ const LogoBox = styled.span`
   height: 40px;
   line-height: 20px;
   padding: 10px;
+
+  > svg {
+    transition: 200ms ease;
+  }
+  &:hover > svg {
+    transform: rotate(20deg);
+  }
 `;
 
 const Logo = () => {
   return (
-    <Link href='/' scroll={false} passHref>
-      <a>
-        <LogoBox>
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='"M PLUS Rounded 1c", sans-serif'
-            fontWeight='bold'
-            ml={3}
-          >
-            Dian Ananda
-          </Text>
-        </LogoBox>
-      </a>
+    <Link href='/' passHref scroll={false}>
+      <LogoBox>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='"M PLUS Rounded 1c", sans-serif'
+          fontWeight='bold'
+          ml={3}
+        >
+          Dian Ananda
+        </Text>
+      </LogoBox>
     </Link>
   );
 };

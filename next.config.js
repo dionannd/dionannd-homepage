@@ -1,9 +1,4 @@
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  reactStrictMode: true,
-  swcManify: true
+/** @type {import('next').NextConfig} */
+module.exports = {
+  reactStrictMode: true
 };
-
-module.exports = nextConfig;

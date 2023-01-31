@@ -6,7 +6,8 @@ import {
   Link,
   Button,
   List,
-  ListItem
+  ListItem,
+  chakra
 } from '@chakra-ui/react';
 import Section from 'src/components/section';
 import Paragraph from 'src/components/paragraph';
@@ -17,6 +18,10 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
 import Image from 'next/image';
 
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+});
+
 const Home = () => {
   return (
     <Layout>
@@ -26,7 +31,6 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
           mb={6}
-          mt={6}
           align='center'
           css={{ backdropFilter: 'blur(10px)' }}
         >
@@ -56,11 +60,14 @@ const Home = () => {
               borderRadius='full'
               overflow='hidden'
             >
-              <Image
+              <ProfileImage
                 src='/images/dion.jpg'
                 alt='Profile image'
-                width='100px'
-                height='100px'
+                width='100'
+                height='100'
+                style={{
+                  width: 'auto'
+                }}
               />
             </Box>
           </Box>
@@ -81,11 +88,16 @@ const Home = () => {
             </Link>
           </Paragraph>
           <Box align='center' mt={4} mb={2} flexDir='row'>
-            <NextLink href='/works' passHref scroll={false}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
-                My Portfolio
-              </Button>
-            </NextLink>
+            <Button
+              as={NextLink}
+              href='/works'
+              passHref
+              scroll={false}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme='teal'
+            >
+              My Portfolio
+            </Button>
           </Box>
         </Section>
 
@@ -118,16 +130,20 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020 to present</BioYear>
-            Works as Technical Smartphone and freelancer Web Developer in
+            Works as Technical Smartphone and freelancer in
             <Link
-              href='https://towedd.com'
+              href='https://towedd.com/'
               target='_blank'
               rel='noreferrer'
-              ml={1}
+              mx={1}
             >
-              Towedd
+              Towedd.com
             </Link>
-            .
+            as (Web Developer).
+          </BioSection>
+          <BioSection>
+            <BioYear>2022 December to present</BioYear>
+            freelancer in <b>Arcentric</b> as (Front-end Development).
           </BioSection>
         </Section>
 

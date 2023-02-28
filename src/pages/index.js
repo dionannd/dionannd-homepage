@@ -79,13 +79,14 @@ const Home = () => {
           </Heading>
           <Paragraph>
             I&apos;m a front-end developer who knows ReactJS, NextJS, and
-            currently I&apos;m deepening ExpressJS, and NodeJS as a back-end to
-            become a fullstack developer, I Experienced in using Laravel and
-            CodeIgniter frameworks, and I&apos;m also learning other things like
-            Golang, Flutter. Record traces by writing in{' '}
-            <Link href='https://jejakkoding.blogspot.com' target='_blank'>
-              Jejak Koding
+            currently I&apos;m deepening ExpressJS, Fastify, and NodeJS as a
+            back-end to become a fullstack developer, I Experienced in using
+            Laravel and CodeIgniter frameworks, and I&apos;m also learning other
+            things like Golang, Flutter. Record traces by writing in{' '}
+            <Link href='https://blog-dion.vercel.app' target='_blank'>
+              My personal blog
             </Link>
+            .
           </Paragraph>
           <Box align='center' mt={4} mb={2} flexDir='row'>
             <Button

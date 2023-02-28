@@ -121,8 +121,14 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href='/posts'>
                   Posts
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/pdf/cv_dian_ananda.pdf'>
-                  Resume
+                <MenuItem
+                  as={MenuLink}
+                  href='/pdf/cv_dian_ananda.pdf'
+                  gap={1}
+                  display='flex'
+                  alignItems='center'
+                >
+                  <DownloadIcon /> Resume
                 </MenuItem>
               </MenuList>
             </Menu>

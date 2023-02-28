@@ -75,7 +75,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as='h3' variant='section-title'>
-            Bio
+            Profile
           </Heading>
           <Paragraph>
             I&apos;m a front-end developer who knows ReactJS, NextJS, and
@@ -104,7 +104,7 @@ const Home = () => {
 
         <Section delay={0.2}>
           <Heading as='h3' variant='section-title'>
-            Profile
+            Bio
           </Heading>
           <BioSection>
             <BioYear>2000</BioYear>

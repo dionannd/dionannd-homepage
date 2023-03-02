@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'Dian Ananda - Homepage',
   siteName: 'Dian Ananda',
   description: "Hello, I'm a Web developer based in Indonesia!",
-  url: 'https://dianananda.vercel.app',
+  url: 'https://dianananda.site/',
   type: 'website',
   robots: 'follow, index',
   image: 'https://dianananda.vercel.app/images/dion.jpg'

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { motion } from 'framer-motion';
 import { GridItemStyle } from '@/components/grid-item';
 
@@ -27,6 +28,20 @@ const Layout = ({ children, title }) => {
             <meta property='og:title' content={t} />
           </Head>
         )}
+        {/* Google tag (gtag.js) */}
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=G-TDZGFZ0P0X'
+          strategy='afterInteractive'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-TDZGFZ0P0X');
+        `}
+        </Script>
         {children}
 
         <GridItemStyle />

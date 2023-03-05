@@ -66,7 +66,8 @@ const Home = () => {
                 width='100'
                 height='100'
                 style={{
-                  width: 'auto'
+                  width: 'auto',
+                  height: 'auto'
                 }}
               />
             </Box>

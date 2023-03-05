@@ -81,8 +81,13 @@ const Navbar = props => {
           <LinkItem href='/works' path={path}>
             Works
           </LinkItem>
-          <LinkItem href='/posts' path={path}>
-            Posts
+          <LinkItem
+            target='_blank'
+            alt='My personal blog'
+            href='https://blog.dianananda.site'
+            path={path}
+          >
+            Blogs
           </LinkItem>
           <LinkItem
             target='_blank'

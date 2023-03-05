@@ -11,14 +11,16 @@
 
 ```
 $PROJECT_ROOT
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Page files
-├── pages
 │   # Static files for images
-└── public
+├── public
+│   # All resource file for pages
+└── src   
+    │   # React component files
+    ├── components
+    │   # Library / Helper files
+    ├── lib
+    │   # Page files
+    └── pages
 ```
 
 ## Deploy on Vercel

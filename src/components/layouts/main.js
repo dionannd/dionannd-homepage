@@ -1,11 +1,17 @@
 import { Box, Container } from '@chakra-ui/react';
+import { Inter } from '@next/font/google';
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Seo from '../seo';
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 const Main = ({ children, router }) => {
   return (
-    <Box as='main' pb={8}>
+    <Box as='main' pb={8} className={inter.className}>
       <Seo />
 
       <Navbar path={router.asPath} />

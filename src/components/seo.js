@@ -25,6 +25,10 @@ const Seo = props => {
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='robots' content={meta.robots} />
       <meta name='description' content={meta.description} />
+      <meta
+        name='keywords'
+        content='Dian Ananda, Dian Ananda Homepage, Dian Ananda portfolio, Dian Ananda website, Dian ananda profile, Dion ananda website, dion website, dion ananda'
+      />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
       <meta property='og:type' content={meta.type} />

@@ -123,8 +123,8 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href='/works'>
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/posts'>
-                  Posts
+                <MenuItem as={MenuLink} href='https://blog.dianananda.site'>
+                  Blogs
                 </MenuItem>
                 <MenuItem
                   as={MenuLink}

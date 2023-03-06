@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google';
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Seo from '../seo';
+import LoadingIndicator from '../loading-indicator';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,6 +18,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW='container.md' pt={20}>
+        <LoadingIndicator />
         {children}
         <Footer />
       </Container>

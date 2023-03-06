@@ -23,8 +23,8 @@ function Website({ Component, pageProps, router }) {
           }}
         >
           <Component {...pageProps} key={router.route} />
-          <Analytics />
         </AnimatePresence>
+        <Analytics />
       </Layout>
     </Chakra>
   );

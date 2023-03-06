@@ -3,7 +3,8 @@ import { Inter } from '@next/font/google';
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Seo from '../seo';
-import LoadingIndicator from '../loading-indicator';
+import { Fragment, useEffect, useState } from 'react';
+import Loading from '../loading';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,18 +12,29 @@ const inter = Inter({
 });
 
 const Main = ({ children, router }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
-    <Box as='main' pb={8} className={inter.className}>
-      <Seo />
+    <Fragment>
+      {loading ? (
+        <Loading />
+      ) : (
+        <Box as='main' pb={8} className={inter.className}>
+          <Seo />
 
-      <Navbar path={router.asPath} />
+          <Navbar path={router.asPath} />
 
-      <Container maxW='container.md' pt={20}>
-        <LoadingIndicator />
-        {children}
-        <Footer />
-      </Container>
-    </Box>
+          <Container maxW='container.md' pt={20}>
+            {children}
+            <Footer />
+          </Container>
+        </Box>
+      )}
+    </Fragment>
   );
 };
 

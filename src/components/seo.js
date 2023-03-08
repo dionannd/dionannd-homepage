@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'Dian Ananda - Homepage',
   siteName: 'Dian Ananda',
   description: "Hello, I'm a Web developer based in Indonesia!",
-  url: 'https://dianananda.site/',
+  url: 'https://dianananda.site',
   type: 'website',
   robots: 'follow, index',
   image: 'https://dianananda.vercel.app/images/dion.jpg'
@@ -27,7 +27,7 @@ const Seo = props => {
       <meta name='description' content={meta.description} />
       <meta
         name='keywords'
-        content='Dian Ananda, Dian Ananda Homepage, Dian Ananda portfolio, Dian Ananda website, Dian ananda profile, Dion ananda website, dion website, dion ananda'
+        content='Dian Ananda, Dian ananda, dian ananda, dian ananda homepage, dian ananda portfolio, dian ananda website, dian ananda profile, dion ananda website, dion website, dion ananda'
       />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}

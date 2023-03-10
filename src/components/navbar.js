@@ -81,13 +81,8 @@ const Navbar = props => {
           <LinkItem href='/works' path={path}>
             Works
           </LinkItem>
-          <LinkItem
-            target='_blank'
-            alt='My personal blog'
-            href='https://blog.dianananda.site'
-            path={path}
-          >
-            Blogs
+          <LinkItem href='/posts' path={path}>
+            Posts
           </LinkItem>
           <LinkItem
             target='_blank'
@@ -123,8 +118,8 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href='/works'>
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href='https://blog.dianananda.site'>
-                  Blogs
+                <MenuItem as={MenuLink} href='/posts'>
+                  Posts
                 </MenuItem>
                 <MenuItem
                   as={MenuLink}

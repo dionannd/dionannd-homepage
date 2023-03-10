@@ -33,13 +33,13 @@ const Works = () => {
             </WorkGridItem>
           </Section>
 
-          <Section>
+          <Section delay={0.1}>
             <WorkGridItem id='sisos' title='Sisos' thumbnail={thumbSisos}>
               A Website social media cloning Instagram with redesign
             </WorkGridItem>
           </Section>
 
-          <Section>
+          <Section delay={0.1}>
             <WorkGridItem
               id='gijanjok'
               title='Gijan Jok Furniture'
@@ -55,4 +55,4 @@ const Works = () => {
 };
 
 export default Works;
-export { getServerSideProps } from '../components/chakra';
+export { getServerSideProps } from '@/components/chakra';

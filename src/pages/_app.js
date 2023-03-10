@@ -9,6 +9,12 @@ if (typeof window !== 'undefined') {
 }
 
 function Website({ Component, pageProps, router }) {
+  const handlezExitComplete = () => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0 });
+    }
+  };
+
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
@@ -16,11 +22,7 @@ function Website({ Component, pageProps, router }) {
         <AnimatePresence
           mode='wait'
           initial={true}
-          onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 });
-            }
-          }}
+          onExitComplete={handlezExitComplete}
         >
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>

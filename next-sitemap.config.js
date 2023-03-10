@@ -1,11 +1,7 @@
-/**
- * @type {import('next-sitemap').IConfig}
- * @see https://github.com/iamvishnusankar/next-sitemap#readme
- */
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://dianananda.site',
   generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }]
-  }
+  generateIndexSitemap: false,
+  sitemapSize: 1000
 };

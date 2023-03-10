@@ -27,7 +27,7 @@ const Seo = props => {
       <meta name='description' content={meta.description} />
       <meta
         name='keywords'
-        content='Dian Ananda, Dian ananda, dian ananda, dian ananda homepage, dian ananda portfolio, dian ananda website, dian ananda profile, dion ananda website, dion website, dion ananda'
+        content='dian, dian web, dian website, dian ananda, Dian Ananda, Dian ananda, dian ananda homepage, dian ananda portfolio, dian ananda website, dian ananda profile, dion ananda website, dion website, dion ananda'
       />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}

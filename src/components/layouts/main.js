@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google';
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Seo from '../seo';
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from '../loading';
 
 const inter = Inter({
@@ -19,22 +19,17 @@ const Main = ({ children, router }) => {
   }, []);
 
   return (
-    <Fragment>
-      {loading ? (
-        <Loading />
-      ) : (
-        <Box as='main' pb={8} className={inter.className}>
-          <Seo />
+    <Box as='main' pb={8} className={inter.className}>
+      <Seo />
+      {loading && <Loading />}
 
-          <Navbar path={router.asPath} />
+      <Navbar path={router.asPath} />
 
-          <Container maxW='container.md' pt={20}>
-            {children}
-            <Footer />
-          </Container>
-        </Box>
-      )}
-    </Fragment>
+      <Container maxW='container.md' pt={20}>
+        {children}
+        <Footer />
+      </Container>
+    </Box>
   );
 };
 

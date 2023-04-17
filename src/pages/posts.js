@@ -6,6 +6,7 @@ import Layout from '@/components/layouts/article';
 import thumbWSL2 from '~/images/blogs/speeding-up-wsl2.png';
 import thumbImage from '~/images/blogs/best-image-website.webp';
 import thumbLaravel from '~/images/blogs/laravel.png';
+import thumbGreatVisitor from '~/images/blogs/greet-your-visitors.webp';
 
 const Posts = () => {
   return (
@@ -17,6 +18,11 @@ const Posts = () => {
 
         <Section delay={0.1}>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              title='Greet your Visitors with Good Morning, Good Afternoon or Good Evening Message using JavaScript'
+              thumbnail={thumbGreatVisitor}
+              href='https://blog.dianananda.site/blog/greeting-message-using-javascript'
+            />
             <GridItem
               title='Speeding up WSL2 Network up than 5x fast'
               thumbnail={thumbWSL2}

@@ -2,7 +2,7 @@
 
 [https://www.dianananda.vercel.app/](https://www.dianananda.vercel.app/)
 
-## Stack
+## Tech Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
 - [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
@@ -22,6 +22,10 @@ $PROJECT_ROOT
     │   # Page files
     └── pages
 ```
+
+## Repo Activity
+
+![Dion Homepage](https://repobeats.axiom.co/api/embed/90dd32beb57be78f48881b4c0e8d57ed4b2bf46a.svg "Repobeats analytics image")
 
 ## Deploy on Vercel
 

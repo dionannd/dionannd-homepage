@@ -144,8 +144,12 @@ const Home = () => {
             as (Web Developer).
           </BioSection>
           <BioSection>
-            <BioYear>2022 December to present</BioYear>
-            freelancer in <b>Arcentric</b> as (Front-end Development).
+            <BioYear>2022 December to 2023 Agustus</BioYear>
+            freelancer as (Front-end Development).
+          </BioSection>
+          <BioSection>
+            <BioYear>2023 Agustus to present</BioYear>
+            Worked in <b>Arcentric</b> as (Fullstack Web Development).
           </BioSection>
         </Section>
 

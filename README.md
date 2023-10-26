@@ -1,6 +1,6 @@
 # Dion's Homepage
 
-[https://www.dianananda.vercel.app/](https://www.dianananda.vercel.app/)
+[www.dianananda.site](https://www.dianananda.site/)
 
 ## Tech Stack
 
@@ -9,12 +9,12 @@
 
 ## Project structure
 
-```
+```shell
 $PROJECT_ROOT
 │   # Static files for images
 ├── public
 │   # All resource file for pages
-└── src   
+└── src
     │   # React component files
     ├── components
     │   # Library / Helper files
@@ -25,7 +25,7 @@ $PROJECT_ROOT
 
 ## Repo Activity
 
-![Dion Homepage](https://repobeats.axiom.co/api/embed/90dd32beb57be78f48881b4c0e8d57ed4b2bf46a.svg "Repobeats analytics image")
+![Dion Homepage](https://repobeats.axiom.co/api/embed/90dd32beb57be78f48881b4c0e8d57ed4b2bf46a.svg 'Repobeats analytics image')
 
 ## Deploy on Vercel
 

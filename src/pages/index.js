@@ -132,7 +132,7 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020 to present</BioYear>
-            Works as Technical Smartphone and freelancer in
+            Works as freelancer in
             <Link
               href='https://towedd.com/'
               target='_blank'
@@ -145,11 +145,11 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022 December to 2023 Agustus</BioYear>
-            freelancer as (Front-end Development).
+            freelancer as (Front-end Web Developer).
           </BioSection>
           <BioSection>
             <BioYear>2023 Agustus to present</BioYear>
-            Worked in <b>Arcentric</b> as (Fullstack Web Development).
+            Worked in <b>Arcentric</b> as (Full Stack Developer).
           </BioSection>
         </Section>
 
